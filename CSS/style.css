@@ -1,4 +1,4 @@
-/*css colors types */
+/* ------------------------------- css colors types ----------------------------------------- */
 /* 
 ➤ Named Colors : ("Apply colors by name")
                   
@@ -22,7 +22,9 @@
  */
 
 
-/* background properties */
+/* ------------------------------------------------------------------------------------------ */
+
+/*---------------------------- background properties -----------------------------------------*/
 
 body {
    width: 100%;
@@ -35,10 +37,76 @@ body {
 }
 
 
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------ units ------------------------------------------------*/
+
+/* 
+➤ (px) --> absolute unit
+
+➤ (%) --> reltive unit
+
+➤ (em) --> relative unit
+
+➤ (rem) --> relative unit  
+ */
 
 
+/* ------------------------------------------------------------------------------------------ */
+
+/* -------------------------------- Fonts properties -----------------------------------------*/
+
+h1 {
+   /* font-family: "Urbanist", sans-serif; */
+   /* font-family: my-font; */
+   /* font-size: 50px; */
+   /* font-weight: 400; */
+   /* font-style: italic; */
+   /* font-variant: small-caps; */
+}
+
+/* ---- > falback font */
+
+h1 {
+   /* font-family: "my-font","urbanist",sans-serif ; */
+}
+
+/* Note --> ((add thow to three fonts in font family. in case first format is not working so second format active and then second format is not working si third by default format isn active))*/
+
+/* -----> custom fonts */
+/* 
+@font-face {
+   font-family: my-font ;
+   src: url(font url) format("format type of format");
+} */
+/* not (@font-face tag placed on top in css file and use font for using custom name in font faily tag) */
 
 
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------Text properties -------------------------------------- */
+
+h1 {
+   text-align: center;
+   text-transform: uppercase;
+   /* text-decoration: underline; */
+   /* text-decoration-color: blue; */
+   /* text-decoration-thickness:5px ; */
+   /* text-decoration-style: wavy; */
+   text-shadow: 2px -2px 5px black;
+}
+p {
+   letter-spacing: 1px;
+   word-spacing: 1px;
+   line-height: 1.5;
+}
+
+/* -----> psedu-element */
+/*  
+p::first-letter {
+   color: blue;
+   font-size: 70px;
+} */
 
 
 
