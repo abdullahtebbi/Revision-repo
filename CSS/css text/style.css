@@ -1,0 +1,25 @@
+/* ------------------------------------Text properties -------------------------------------- */
+
+h1 {
+   /* text-align: center; */
+   /* text-transform: uppercase; */
+   /* text-decoration: underline; */
+   /* text-decoration-color: blue; */
+   /* text-decoration-thickness:5px ; */
+   /* text-decoration-style: wavy; */
+   /* text-shadow: 2px -2px 5px black; */
+}
+p {
+   /* letter-spacing: 1px; */
+   /* word-spacing: 1px; */
+   /* line-height: 1.5; */
+}
+
+/* -----> psedu-element */
+/*  
+p::first-letter {
+   color: blue;
+   font-size: 70px;
+} */
+
+/* ------------------------------------------------------------------------------------------ */

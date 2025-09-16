@@ -1,0 +1,25 @@
+/* ------------------------------- css colors types ----------------------------------------- */
+/* 
+➤ Named Colors : ("Apply colors by name")
+                  
+➤ Hex Colors : ("#00ff00")
+ 
+➤ RGB Colors : ("rgb(255, 0, 0)")
+
+➤ RGBA Colors : ("rgba(0, 0, 0, 0.5)")
+
+➤ HSL Colors : ("hsl(240, 100%, 50%)")
+
+➤ HSLA Colors : ("hsla(0, 100%, 50%, 0.3)")
+
+➤ currentColor : ("currentColor ka use border color ko text color ke saath match karne ke liye hota hai.")
+
+➤ transparent : ("Main ne background transparent rakhne ke liye transparent keyword ka use kiya.")
+
+➤ lab() Colors (Modern) : ("lab(50% 60 30) ek advanced color format hai jo accurate shading ke liye use hota hai.")
+
+➤ lch() Colors (Modern) : ("lch(70% 80 40) colors ko human eye ke perception ke mutabiq adjust karta hai.")
+ */
+
+
+/* ------------------------------------------------------------------------------------------ */

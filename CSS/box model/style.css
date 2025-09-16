@@ -1,0 +1,117 @@
+ /*  border */
+
+ html {
+    font-family: sans-serif;
+ }
+
+/* 
+#border-heading {
+  font-size: 64px;
+  color: black;
+ }
+
+p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    color: black;
+}
+
+.border-section{
+         width: 1000px;
+         color: #fff ;  
+         background-color: skyblue;
+         border: 10px solid blue;
+} */
+
+
+
+
+/* border-radius */
+/* 
+#radius-heading {
+  font-size: 64px;
+  color: black;
+ }
+
+div{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 50px;
+    border-radius: 500px;
+    border-radius: 150px 10px 280px 0;
+}
+ */
+
+
+/* padding` */
+
+/* 
+#padding-heading {
+  font-size: 64px;
+  color: black;
+ }
+
+#padding-section{
+         width: 500px;
+         color:black ;  
+         background-color: skyblue;
+         border: 10px solid blue;
+         padding: 30px;
+} 
+ */
+
+
+/* Margin */
+
+#margin-heading{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+#margin-section{
+    background-color: aqua;
+    color: black;
+    width: 1200px;
+    padding: 50px;
+    /* margin: 100px 100px 0px 150px; */
+    margin: 50px auto;
+}
+#section-1{
+    background-color: aquamarine;
+    padding: 40px;
+    color: black;
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+#section-2{
+    background-color: aquamarine;
+    padding: 40px;
+    color: black;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

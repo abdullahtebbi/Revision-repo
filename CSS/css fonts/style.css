@@ -1,0 +1,29 @@
+/* -------------------------------- Fonts properties -----------------------------------------*/
+
+h1 {
+   /* font-family: "Urbanist", sans-serif; */
+   /* font-family: my-font; */
+   /* font-size: 50px; */
+   /* font-weight: 400; */
+   /* font-style: italic; */
+   /* font-variant: small-caps; */
+}
+
+/* ---- > falback font */
+
+h1 {
+   /* font-family: "my-font","urbanist",sans-serif ; */
+}
+
+/* Note --> ((add thow to three fonts in font family. in case first format is not working so second format active and then second format is not working si third by default format isn active))*/
+
+/* -----> custom fonts */
+/* 
+@font-face {
+   font-family: my-font ;
+   src: url(font url) format("format type of format");
+} */
+/* not (@font-face tag placed on top in css file and use font for using custom name in font faily tag) */
+
+
+/* ------------------------------------------------------------------------------------------ */
