@@ -45,9 +45,10 @@ div{
 
 div{
     /* margin: 100px auto;
-    width: 500px;
-    height: 500px;
-    border-radius: 30px; */
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+    background-image: radial-gradient(red,green,yellow); */
 }
 
 /* repeating linear-gradient */
@@ -58,10 +59,9 @@ div {
     width: 500px;
     height: 500px;
     border-radius: 30px;
-    background-image: repeating-linear-gradient(to top right,#d2e0fb, #79ac78  40px);
- */
-}
+    background-image: repeating-linear-gradient(to top right,#d2e0fb, #79ac78  40px); */
 
+}
 
 
 
