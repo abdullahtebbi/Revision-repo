@@ -1,0 +1,35 @@
+/* css combinator */
+
+/* 
+Descedant Selector (space) : 
+selects an elements that is a descendant of an another elements. 
+*/
+
+/* 
+Child selector (>) :
+selects an elements that is a direct child of another element.
+ */
+
+/* 
+Adjacent sibling selector (+) : 
+Selects an element that is immediately preceded by another element.
+ */
+
+
+/* 
+General sibling selector (~) :
+Selects all elements thats are siblings of another elements and share the same parent.
+ */
+
+/* 
+Universal Selector (*) :
+Select all elements.
+ */
+
+
+
+
+
+
+
+
