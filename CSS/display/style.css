@@ -1,0 +1,73 @@
+*a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+#display {
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    background-color: aqua;
+    /* height: 50px; */
+    /* width: 50%; */
+    padding:10px;
+    text-align: center;
+}
+p{
+    background-color: aqua;
+    font-size: 20px;
+    /* height: 50px; */
+    /* width: 70%; */
+    padding: 10px;
+    text-align: center;
+}
+
+a{
+    /* background-color:brown ; */
+    /* color: white; */
+    /* text-decoration: none; */
+    /* padding: 10px; */
+    /* margin-left: 20px; */
+/* (this properties is not apply for this elements bacause this is a inline elements)    
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+ */
+}
+
+/* after use display:block; property (start element with new line)*/
+
+/* a{
+    background-color:brown ;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    margin-top: 50px;
+} */
+
+
+/* after use display:inline-block; property (not the start element with new line) */
+
+a{
+    background-color:brown ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    margin: 50px 0 0 20px;
+    width: 300px;
+}
+
+
+
+
+
+
