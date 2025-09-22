@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;   
+    display: flex;
+    align-items: center;
+}
+#left{
+    width: 50%;
+    padding: 90px 0px 90px 150px;
+}
+#right{
+    width: 50%;
+}
+h1{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    position: relative;  
+}
+h1::before{
+    content: "< hellow />";
+    position: absolute;
+    top: -20px;
+    font-size: 20px;
+    color: yellow;
+
+}
+h1::after{
+    content: "";
+    position: absolute;
+    top: 65px;
+    right: 75px;
+    width: 70px;
+    border: 2px solid green;
+}
+p{
+ color: white;
+ font-size: 20px;
+    margin-bottom: 35px;
+    letter-spacing: 0.5;
+    line-height: 1.4;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+img{
+width: 80%;
+filter: drop-shadow(0 0 15px  rgb(182, 50, 50));
+}
+
+
+
+
+
