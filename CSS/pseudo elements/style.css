@@ -52,6 +52,17 @@ p{
     line-height: 1.4;
 
 }
+p::first-letter{
+    font-size: 40px;
+    color: red;
+}
+p::first-line{
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+p::selection{
+    background-color: brown;
+}
 a {
     text-decoration: none;
     color: black;
