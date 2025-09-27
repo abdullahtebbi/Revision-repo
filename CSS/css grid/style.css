@@ -20,44 +20,64 @@ body {
     background-color: #dcd7c9;
     color: white;
     display: grid;
-    grid-template-rows: 250px 250px;
-    /* grid-template-columns: 250px 250px 250px; */
-    /* grid-template-columns: 250px 250px 1fr; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    
-    /* grid-template-columns: repeat(3,1fr); */
+
+    /* define rows in grid */
+    /* grid-template-rows: 250px 250px; */
+    grid-template-rows: repeat(2,250px); /* short hand property of rows define
+
+    /* auto creat rows when increase the items size */
     grid-auto-rows: 250px;
-    
-    /* grid-template-columns:1fr min-content repeat(1 ,1fr); */
-    /* grid-template-columns:1fr max-content repeat(1 ,1fr); */
-    grid-template-columns:1fr max-content repeat(1 ,1fr);
 
 
-    /* row-gap: 10px;
-    column-gap: 10px; */
-    gap: 10px;
-
-    /* align */
-    /* align-items: center; */
-    /* align-items:start; */
-    /* align-items:end; */
-    /* align-items: stretch; */
+    /* define columns in grid */
+    /* grid-template-columns: 250px 250px 250px; */
+    /* grid-template-columns: 250px 1fr 1fr; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3 , 1fr); */  /* short hand property of columns define */
    
-/* justify */
+    /* Adjust size according the content  (min-content ,  max content) */
+    /* grid-template-columns: 1fr min-content repeat(1 , 1fr);
+    grid-template-columns: 1fr max-content repeat(1 , 1fr); */
+    /* grid-template-columns: 1fr minmax(250px , 1fr) repeat(1 , 1fr); */ /* short hand propetiy of min and max */
+    /* grid-template-columns: repeat(3 , minmax(250px , 1fr)); */
+    /* grid-template-columns: repeat(auto-fill , minmax(250px , 1fr)); */ /* auto-fill */
+    /* grid-template-columns: repeat(auto-fit , minmax(250px , 1fr)); */  /* auto-fit */
+    
+    grid-template-columns: repeat(3 , minmax(250px , 1fr)); /* for use resposive layout */
+     
 
+
+   /* gap in rows and columns */
+
+   /* gap in rows */
+   /* row-gap: 10px; */
+
+   /* gap in columns */
+   /* column-gap: 10px; */
+
+   /* apply same gap are both */
+   gap: 10px; /*short hand property*/
+
+
+   /* align items in verticaly with original size */
+   /* align-items: center; */
+   /* align-items: start; */
+   /* align-items: end; */
+   /* align-items: stretch; */
+
+/* align items in horizonticaly with original size */
+   /* justify-items: center; */
    /* justify-items: start; */
-    /* justify-items: center; */
-    /* justify-items: end; */
-    /* justify-items: stretch; */
-
-
-
-
-
-
-
-
+   /* justify-items: end; */
+   /* justify-items: stretch; */
 }
+
+@media (width < 1200px){
+    #grid-container{
+        grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    }
+}
+
 .item{
     display: grid;
     place-items: center;
@@ -68,25 +88,37 @@ body {
 }
 .item-1{
     background-color: #662549;
-    /* grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3; */
-    
-    /* grid-row: 2 / 3;
-    grid-column: 2 / 3; */
 
-    /* grid-area: 2 / 2 / 3 / 3; */
-    /* grid-area: 1 / 2 / 2 / 4 ; */
+    /* change position of item in grid as a row */
+    /* grid-row-start: 2;
+    grid-row-end: 3; */
+    /* grid-row: 2 / 3; */ /* short hand property to change position of row */
+
+    /* change position of item in grid as a column  */
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+    /* grid-column: 2 / 3; */ /* /* short hand property to change position of column */
+
+    /* combine shorthand property to change position of comlumns and rows */
+    /* grid-area: 2 / 3 / 3 / 4 ; */
+
+
+
 }
 .item-2{
     background-color: #113946;
+    
 }
 .item-3{
     background-color: #102c57;
+
+    /* increase space of item */
+    /* grid-area: 1 / 2 / 3 / 4; */
+
 }
 .item-4{
     background-color: #884a39;
+    /* grid-area: 2 / 1 / 4 / 2; */
 }
 .item-5{
     background-color: #454545;
