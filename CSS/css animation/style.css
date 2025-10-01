@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+body{
+    background-color: #2b3033;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+.container h1{
+    padding: 30px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 50px;
+    display: inline-block;
+    background-color: #4861ec;
+    box-shadow: 0 0 0 15px #353f6d;
+    animation-name: lefttoright;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    /* animation-duration: 2s; */
+    animation-iteration-count: 3;
+    /* animation-direction: alternate; */ /* alternate work only with iteration-count */
+    /* animation-direction: alternate-reverse; */
+}
+/* 
+@keyframes lefttoright{
+    from{
+        translate: 0%;
+    }to{
+        translate: calc(90vw - 100px);
+    }
+}
+ */
+
+ /* method 2 */
+
+
+@keyframes lefttoright{
+    0%{
+        translate: 0%;
+    }
+    50%{
+        translate: 20vw 0vh;
+    }
+    100%{
+        translate: calc(90vw - 100px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

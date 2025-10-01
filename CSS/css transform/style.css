@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+body{
+    background-color: #2b3033;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: inset 0 0 0 5px #4861ec;
+    perspective: 1000px;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: #4861ec;
+    box-shadow: 0 0 0 15px #353f6d;
+    margin: 20px;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+}
+
+.container img{
+    width: 20%;
+    height: auto;
+    transition: all 5s;
+}
+.container img:hover {
+    /* transform: translateZ(500px); */
+    /* transform: translateX(-500px); */
+    /* transform: translateY(500px); */
+    /* transform: translateY(-500px); */
+    /* scale: 0.5; */
+
+    /*if you increase size X and Y direction */
+    /* transform: scaleX(1.5); */ 
+    /* transform: scaleY(1.5); */ 
+
+    /* rotate the items */
+    /* transform: rotate(70deg); */
+    /*change rotating center point */
+    /* transform-origin: left; */
+    
+    
+    /* transform: skew(20deg ); */
+    /* transform: skewY(20deg ); */
+    /* translate: 500px -200px;*/  /*define x and y direction*/
+    transition: 1s linear;
+
+/* using perspective */
+     /* transform: rotate(70deg); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
