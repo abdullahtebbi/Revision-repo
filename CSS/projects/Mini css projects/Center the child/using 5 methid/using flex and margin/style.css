@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+#parent {
+    width: 600px;
+    height: 600px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    display: flex;
+}
+
+#child {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 5px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
