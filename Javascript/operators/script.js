@@ -138,19 +138,71 @@
 
 //////
 
-// ---> logical operator
+// ---> logical operators
+// there are three main logical operator : && (logical AND) || (logical OR), and ! (logical NOT)
+
+// --> logical AND (&&)
+// return true if both operands are true, otherwise, it returns false.
+ 
+// var x = 5;
+// var y = 10;
+// console.log(x > 0 && y == 9); // false
+// console.log(x > 0 && y == 10); // true
+
+// formulas
+// true && true = true
+// true && false = false
+// false && false = false
 
 
+// --> logical OR (||) : returns true if at least one of the operand is true, otherwise, it return false.
+
+// var x = 5;
+// var y = 10;
+// console.log(x > 0 || y == 9); // true
+// console.log(x > 8 || y == 9); // false
+
+// formulas
+// true || true = true
+// true || false = true
+// false || false = false
 
 
+// --> logical NOT (!)
+//  returns true if the operand is false, and false if the operand is true
+
+// var x = 2;
+// var y = 4;
+// console.log(!(x == y)); // true
+// console.log(!(x * x == y)); // false
+
+// convert true into false
+// convert false into true
 
 
+//////
+
+//////
+
+// ---> ternary operator (condition ? expressionIfTrue : expressionIfFalse)
+
+// var age = 18;
+// console.log(age >= 18 ? "Yes you are eligible for driving" : "Sorry you are not eligible for driving");
+
+//////
 
 
+//////
 
+// ---> unary operators
 
+// --> increment operators (++)
+var x = 5;
 
-
+// both are same
+// x = x+1; // method one
+// x++;  // method two but sharp method
+// console.log(x);
 
 
 
