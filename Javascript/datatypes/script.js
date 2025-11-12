@@ -1,6 +1,6 @@
 //////////////////////////// datatypes ///////////////////////////////////////////
 
-// note : Types of data types (primitive datatypes , object datatypes)
+// note : Types of data types (primitive datatypes , non primitives,object datatypes)
 
 
 
@@ -10,8 +10,13 @@
 
 // (1) ---> number (datatype)
 
+// --> integar num
 // var myFavNum = 3;
 // console.log(myFavNum);
+
+// --> float num
+// var cgpa = 4.3;
+// console.log(cgpa);
 
 
 // (2) ---> string (datatype)
@@ -42,19 +47,59 @@
 
 // (6) ---> bigInt (datatype)
 
-// pending
-
+// var myFavNum = BigInt("123");
+// console.log(myFavNum); // output is (123n)
 
 
 // (7) ---> symbol (datatype)
 
-// pending
-
+// var message = Symbol("Hello!");
+// console.log(message);
 
 
 // ------------------------------------------------------------------------------- //
 
+// ----------------------> non Primitive datatypes <--------------------------------//
 
+// ---> objects form data (colections of values)
+
+// const student = {
+//     fullName : "Abdullah Tayyab",
+//     age : 22,
+//     program : "AI drivern Engineering",
+//     rollNum : 192041,
+//     cgpa : 4.3,
+//     isMarid : false
+// }
+
+// console.log(student);
+
+// access key in object
+// console.log(student.fullName); // method one
+// console.log(student["fullName"]); // method two
+
+// add values or update values in previous keys
+// student["age"] = student["age"] + 1;
+// console.log(student.age);
+
+// student["program"] = "Full stack Engineer";
+// console.log(student.program);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------- //
 
 // Extra
 
@@ -70,7 +115,7 @@
 
 ///////
 
-// method one 
+// method one
 // var numStr = "4";
 // var num = Number(numStr);
 // console.log(num);
@@ -80,11 +125,11 @@
 // console.log(Number(numStr))
 // console.log(typeof Number(numStr));
 
-/////// 
+///////
 
 ///////
 
-// method two 
+// method two
 // var numStr = "3";
 // var num = +numStr;
 // console.log(num);
@@ -98,7 +143,7 @@
 
 ///////
 
-// method three 
+// method three
 // var numStr = "3";
 // var num = parseInt(numStr);
 // console.log(num);
@@ -118,7 +163,7 @@
 // console.log(num);
 // console.log(typeof num)
 
-// in log 
+// in log
 // console.log(parseFloat(numStr));
 // console.log(typeof parseFloat(numStr));
 
@@ -179,7 +224,7 @@
 // console.log(numToStr);
 // console.log(typeof numToStr)
 
-// in log 
+// in log
 // console.log(str + "");
 // console.log(typeof (str + ""));
 

@@ -6,9 +6,53 @@
 // (assignment oprators in programing are symbols used to assign values to variables. They take the value on the right side of the operator and assign it to the variable on the left side.)
 
 // code
+
+// (=) this operator use to assign value for variables 
 // var myFavNum = 3;
 
 // note (= is a assignment operator)
+
+// --> (+=)
+// var x = 5;
+// console.log(x += 5);
+
+// note x += 5 same for x = x + 5.
+
+
+// --> (-=)
+// var x = 10;
+// console.log(x -= 5);
+
+// note x -= 5 like same x = x - 5
+
+
+// -->  (*=)
+// var x = 10;
+// console.log(x *= 5);
+
+// note x *= 5 like same x = x * 5
+ 
+
+// -->  (/=)
+// var x = 10;
+// console.log(x /= 5);
+
+// note x *= 5 like same x = x * 5
+ 
+
+// -->  (%=)
+// var x = 10;
+// console.log(x %= 5);
+
+// note x %= 5 like same x = x % 5
+ 
+
+// -->  (**=)
+// var x = 5;
+// console.log(x **= 2);
+
+// note x %= 5 like same x = x % 5
+ 
 
 //////
 
@@ -197,12 +241,48 @@
 // ---> unary operators
 
 // --> increment operators (++)
-var x = 5;
+
+// var x = 5;
 
 // both are same
 // x = x+1; // method one
 // x++;  // method two but sharp method
 // console.log(x);
+
+
+// -> post increment (?++)
+// In this case the value is changed first and then printed.
+
+
+// -> pre increment (++?)
+// In this case the value is changed first and then printed
+// var x = 4;
+// console.log(++x);
+
+
+// --> decrement operator (?--)
+
+// var x = 5;
+// --x;
+// console.log(x);
+
+// -> post decrement (?++)
+// In this case the value is printed first and then decrease
+
+// -> pre decrement (--?)
+// In this case the value in decrease first and then printed
+// var x = 5;
+// console.log(--x);
+
+
+
+
+
+
+
+
+
+
 
 
 
