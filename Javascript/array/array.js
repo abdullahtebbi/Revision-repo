@@ -99,12 +99,22 @@
 
 // ---> Array methods
 
-// --> array.push()     change original array
+// --> array.push()  // add items at end   change original array
 
 // let fruits = ['apple','banana','lichi']
 // console.log(fruits);
 
 // fruits.push('grapes');
+// console.log(fruits);
+
+
+
+// ---> array.unshift() // add items at start
+
+// let fruits = ['apple','banana','mango']
+
+// console.log(fruits);
+// fruits.unshift('lichi');
 // console.log(fruits);
 
 
@@ -123,13 +133,46 @@
 
 
 
-// ---> array.toString()
+// ---> array.shift() // remove value at start  // change original array
+
+// let fruits = ['grapes','apple','banana','mango']
+
+// console.log(fruits);
+// console.log(fruits.shift());
+// console.log(fruits);
 
 
 
+// ---> array.toString() // do not change original array
+
+// let arr = [73,89,22,91];
+// console.log(arr);
+// console.log(arr.toString());
+// console.log(arr);
 
 
 
+// ---> array.concat(arry1) // do not change original array
+
+// let arr1 = [84,90,73,99];
+// let arr2 = [83,11,22,33];
+// let result = arr1.concat(arr2);
+// console.log(result);
+
+
+
+// ---> array.slice() // do not change original array
+
+// let fruits = ['grapes','apple','banana','mango']
+// console.log(fruits.slice(1,3));
+
+
+
+// array.splice(stating index,del count items,new element) //  change original rray
+
+// let fruits = ['grapes','apple','banana','mango']
+// let updateArr = fruits.splice(1,1,'lichi')
+// console.log(fruits);
 
 
 
