@@ -64,6 +64,86 @@
 // }
 // console.log(mul(2,2));
 
+//////
+
+
+// practice question
+
+// function countVOl (str){
+//     let count = 0;
+//     for(let char of str){
+//         if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"
+//         ){
+//          count++;
+//     }
+// }
+//  return count;
+// }
+// console.log(countVOl("hello world"));
+
+
+// using arrow function
+
+// const countvol = (str) => {
+//     let count = 0;
+//     for (let char of str){
+//         if(char === "a" || char === "e" || char === "i" || char === "i" || char === "o" || char === "u") {
+//             count++
+//         }
+//     }
+//     return count
+// }
+
+// console.log(countvol("hello world"));
+
+//////
+
+//////
+
+// ---> for each loop & callback function
+
+// let arr = ["Abdullah","Tayyab","Adrees"];
+// let arr = [27,84,39,83,33];
+// arr.forEach(function printVal (val){
+//     console.log(val);
+// })
+
+
+// let arr = ["Abdullah","Tayyab","Adrees"];
+// let arr = [27,84,39,83,33];
+
+// arr.forEach((val) => {
+//     console.log(val);
+// })
+
+
+// let arr = ["Abdullah","Tayyab","Adrees"];
+// // let arr = [27,84,39,83,33];
+
+// arr.forEach((val,index) => {
+//     console.log(val , index);
+// })
+
+
+// let arr = ["Abdullah","Tayyab","Adrees"];
+// // let arr = [27,84,39,83,33];
+
+// arr.forEach((val,index,arr) => {
+//     console.log(val , index , arr);
+// })
+
+//////
+
+
+//////
+
+
+
+
+
+
+
+
 
 
 

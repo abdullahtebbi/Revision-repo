@@ -175,6 +175,72 @@
 // console.log(fruits);
 
 
+//////
+
+
+//////
+
+// ---> map
+// creat a mew array with the result of soem opetation. They value is callback returns are used to form new array
+
+// let arr = [23,45,83,33];
+
+// arr.map((val) => {
+//     console.log(val);
+    
+// })
+
+
+// make new array
+// let arr = [23,45,83,33];
+
+// let demo = arr.map((val) => {
+//     return val * 2;
+    
+// })
+// console.log(demo);
+
+
+
+// ---> filter
+// Creats a new array of elements that give true for a condition / filter. Eg : all even elements
+
+
+// let arr = [1,2,3,4,5,6,7,8,9];
+
+// let evenArray = arr.filter((val) => {
+//     return val % 2 === 0
+// })
+
+// console.log(evenArray);
+
+
+
+// ---> reduse 
+// perform some operations and reduse the array to a single value. It return that single value
+
+// let arr = [1,2,3,4,5,6];
+
+// let sumArr = arr.reduce((pre,curr) => {
+//     return pre + curr;
+// })
+// console.log(sumArr);
+
+
+// let arr = [1,2,3,4,5,6];
+
+// let sumArr = arr.reduce((pre,curr) => {
+//     return pre > curr ? pre : curr;
+// })
+// console.log(sumArr);
+
+
+
+
+
+
+
+
 
 
 
