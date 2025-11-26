@@ -1,0 +1,13 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: red;
+    background-color: burlywood;
+}
+
+Button {
+    background-color: blue;
+}

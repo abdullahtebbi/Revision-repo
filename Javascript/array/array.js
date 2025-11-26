@@ -200,7 +200,11 @@
 // })
 // console.log(demo);
 
+//////
 
+
+
+//////
 
 // ---> filter
 // Creats a new array of elements that give true for a condition / filter. Eg : all even elements
@@ -214,7 +218,11 @@
 
 // console.log(evenArray);
 
+//////
 
+
+
+//////
 
 // ---> reduse 
 // perform some operations and reduse the array to a single value. It return that single value
@@ -227,22 +235,54 @@
 // console.log(sumArr);
 
 
-// let arr = [1,2,3,4,5,6];
+// let arr = [1,2,3,14,5,6];
 
 // let sumArr = arr.reduce((pre,curr) => {
 //     return pre > curr ? pre : curr;
 // })
 // console.log(sumArr);
 
+//////
 
 
 
+//////
+
+// practice question
+
+// question one
+// let marksAr = [77,98,32,88,91,95];
+
+// let newArr = marksAr.filter((val) => {
+//     return val >= 90 ;
+// })
+
+// console.log(newArr);
+
+
+// question two
+
+// let n = 8;
+// let arr = [];
+
+// for (let i=1; i<=n; i++){
+//     arr[i-1] = i;
+// }
+// console.log(arr);
+
+// let sumArr = arr.reduce((pre,curr) => {
+//     return pre + curr;
+// })
+// console.log(sumArr);
+
+// let fectorial = arr.reduce((pre,curr) => {
+//     return pre * curr;
+// })
+// console.log(fectorial);
 
 
 
-
-
-
+// question three
 
 
 
