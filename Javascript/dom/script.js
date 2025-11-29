@@ -59,7 +59,33 @@
 // console.log(firstElement.tagName);
 
 
+
 // --> innerText  (returns the text content of the element and all its children)
+
+// let div = document.querySelector("div");
+// console.log(div);
+
+
+
+// --> innerHTML (return the  plan text or HTML contents in the element)
+
+// let div = document.querySelector("div");
+// console.log(div);
+
+
+
+// --> textContent  (returns textual content even for hidden elements)
+
+// let eccessH1 = document.querySelector("h1");
+// console.log(eccessH1);
+
+
+
+
+
+
+
+
 
 
 
