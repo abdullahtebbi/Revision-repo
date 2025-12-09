@@ -1,3 +1,20 @@
 body {
     background-color: aqua;
 }
+
+#div {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+div{
+    width: 150px;
+    height: 250px;
+    background-color: white;
+    margin: 10px;
+    border: 2px solid black;
+}

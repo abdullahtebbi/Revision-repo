@@ -63,14 +63,14 @@
 // --> innerText  (returns the text content of the element and all its children)
 
 // let div = document.querySelector("div");
-// console.log(div);
+// console.log(div.innerText);
 
 
 
 // --> innerHTML (return the  plan text or HTML contents in the element)
 
 // let div = document.querySelector("div");
-// console.log(div);
+// console.log(div.innerHTML);
 
 
 
@@ -80,6 +80,77 @@
 // console.log(eccessH1);
 
 
+
+// ---> atributes
+
+// --> get atributr values
+
+// let div = document.querySelector("div")
+// console.log(div)
+
+// let id = div.getAttribute("id");
+// console.log(id)
+
+// let name = div.getAttribute("name");
+// console.log(name);
+
+// console.log(div.getAttribute("id"));
+
+
+
+// --> set atribute values
+
+// let div = document.querySelector("div");
+// console.log(div.setAttribute("id" , "class") , div.setAttribute("name" , "ttt"));
+
+
+
+
+// ---> access and change style
+
+// let div = document.querySelector("div");
+// div.style.backgroundColor = "red";
+// div.style.fontSize = "20px"
+// div.innerText = "After changing styles"
+// div.style.visibility = "hidden"
+
+
+
+
+
+// ---> Insert Elements
+
+// --> creat elements
+// let newBtn =document.createElement("button");
+// newBtn.innerText = "click me!"
+// console.log(newBtn);
+
+
+
+// --> add element
+
+// -> adds at the end of node (inside) 
+// let div = document.querySelector("div");
+// div.append(newBtn)
+
+// -> adds at the first of node (inside)
+// let div = document.querySelector("div");
+// div.prepend(newBtn);
+
+// -> adds before the node (outside)
+// let div = document.querySelector("div");
+// div.before(newBtn);
+
+// -> adds after the node (outside)
+// let div = document.querySelector("div");
+// div.after(newBtn);
+
+
+
+
+// ---> delete node element
+// let div = document.querySelector("ul");
+// div.remove()
 
 
 
