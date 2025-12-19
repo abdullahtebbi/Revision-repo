@@ -1,0 +1,38 @@
+/* practice question */
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+
+
+#box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    margin: 10px;
+    background-color: aqua;
+    color: black;
+}
+
+
+#hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+

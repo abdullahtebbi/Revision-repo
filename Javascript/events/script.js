@@ -58,27 +58,67 @@
 
 
 // ---> remove eventlister
-let btn1 = document.querySelector('#btn-1');
 
-btn1.addEventListener('click' , () => {
-    console.log("button was clicked - handler 1");
-})
+// let btn1 = document.querySelector('#btn-1');
 
-btn1.addEventListener('click' , () => {
-    console.log("button was clicked - handler 2");
-})
+// btn1.addEventListener('click' , () => {
+//     console.log("button was clicked - handler 1");
+// })
 
-
-const handler3 = () => {
-    console.log("button was clicked - handler 3");
-}
-btn1.addEventListener('click' , handler3)
+// btn1.addEventListener('click' , () => {
+//     console.log("button was clicked - handler 2");
+// })
 
 
-// remove handler3 using eventListner
-btn1.removeEventListener("click" , handler3)
+// const handler3 = () => {
+//     console.log("button was clicked - handler 3");
+// }
+// btn1.addEventListener('click' , handler3)
 
 
+// // remove handler3 using eventListner
+// btn1.removeEventListener("click" , handler3)
+
+
+
+
+
+// practice question
+
+// let modeBtn = document.querySelector("#mode");
+// let body = document.querySelector("body")
+// let currMode = "light";
+
+// modeBtn.addEventListener("click", () => {
+//  if(currMode === "light"){
+//     body.classList.add("dark");
+//     body.classList.remove("light");
+//     currMode = "dark";
+//  }else{
+//     body.classList.add("light");
+//     body.classList.remove("dark");
+//     currMode = "light"; 
+// }
+//  console.log(currMode);
+ 
+// })
+
+
+// question 2
+
+
+// let box = document.querySelector("#box");
+// let hidden = document.querySelector("#hidden");
+
+// box.addEventListener("mouseenter", () => {
+//     hidden.style.display = "block";
+//     console.log("you are inside the div.");
+// });
+
+// box.addEventListener("mouseleave", () => {
+//     hidden.style.display = "none";
+//     console.log("you are leave the div.");
+// });
 
 
 
