@@ -58,6 +58,9 @@ const playGame = (userChoice) => {
     
 }
 
+const resetGame = () => {
+    
+}
 
 choices.forEach((choice) => {
     choice.addEventListener("click" , () => {
