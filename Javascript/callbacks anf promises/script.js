@@ -73,17 +73,75 @@
 // })
 
 
-function getData (dataId,getNextData){
-    return new Promise((resolve,reject) => {
-        setTimeout(()=> {
-            console.log(`data ${dataId}`)
-            resolve('success')
-            if(getNextData){
-                getNextData();
-            }
-        },9000)
-    })
-}
+// function getData (dataId,getNextData){
+//     return new Promise((resolve,reject) => {
+//         setTimeout(()=> {
+//             console.log(`data ${dataId}`)
+//             resolve('success')
+//             if(getNextData){
+//                 getNextData();
+//             }
+//         },9000)
+//     })
+// }
+
+
+
+// const getPromise = ()=>{
+//      return new Promise((resolve,reject)=> {
+//         console.log("I am a promise");
+//         resolve("success");  
+//         // reject("error")
+//      })
+// }
+
+// let promise = getPromise();
+
+// promise.then((res)=> {
+//     console.log("promise fulfilled", res);
+// })
+
+// promise.catch((err)=> {
+// console.log("rejected", err);
+// })
+
+
+// -->  promise chain
+
+// function asynFunc1() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("some data1");
+//             resolve("seccess")
+//         }, 4000)
+//     })
+// }
+
+// function asynFunc2() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("some data2");
+//             resolve("seccess")
+//         }, 4000)
+//     })
+// }
+
+// console.log("fetching data1 ....");
+// let p1 = asynFunc1();
+// p1.then((res) => {
+//     console.log(res);
+
+//     console.log("fetching data2 ....");
+//     let p2 = asynFunc2();
+//     p2.then((res) => {
+//         console.log(res);
+//     });
+// });
+
+
+
+// ---> async-Await
+
 
 
 
