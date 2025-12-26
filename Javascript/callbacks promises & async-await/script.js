@@ -143,6 +143,27 @@
 // ---> async-Await
 
 
+// function api (){
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             console.log("wether data");
+//             resolve(200)
+//         },2000)
+//     })
+// }
+
+// async function getWetherData () {
+//     await api(); // first call
+//     await api(); // second call
+// }
+
+
+
+
+
+
+
+
 
 
 
