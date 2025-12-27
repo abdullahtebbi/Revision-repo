@@ -22,91 +22,148 @@
 
 // ---> callbacks
 
-// function sum (a,b){
+
+// function sum (a,b) {
 //     console.log(a + b);
 // }
 
-
 // function calculator (a,b,sumCallBack){
-//     sumCallBack(a,b);
+//     sumCallBack(a,b)
 // }
-
 
 // calculator(1,2,sum);
 
 
-
-
 // ---> callbacks hell
 
-// function getData (dataId){
-//     console.log(`data = ${dataId}`);
-// }
-
-// function getData (dataId,getNextData){
-//     setTimeout(()=> {
-//         console.log(`data ${dataId}`);
+// function getData (dataId,getNextData) {
+//     setTimeout(()=>{
+//         console.log(`data = ${dataId}`);
 //         if(getNextData){
-//             getNextData();
+//            getNextData();
 //         }
-//     }, 2000)
+//     },2000)
 // }
 
 // getData(1,()=> {
-//     console.log("getting data 2.......");
-//     getData(2,()=> {
-//     console.log("getting data 3.......");
-//         getData(3,()=>{
-//     console.log("getting data 4.......");
-//             getData(4)
+//     console.log("getting data 2 .....");
+//     getData(2,() => {
+//     console.log("getting data 3 .....");
+//         getData(3,()=> {
+//     console.log("getting data 4 .....");
+//             getData(4);
 //         });
 //     });
 // });
 
 
+
 // ---> promices
 
-// let promise = new Promise((resolve,reject)=> {
-//     console.log("I am a promice");
-//     // resolve("success")
-//     reject("some error")
+// let promise = new Promise ((resolve,reject) => {
+//     console.log("I am a promise");
+//     // resolve("success");
+//     reject("some error");
 // })
 
 
-// function getData (dataId,getNextData){
-//     return new Promise((resolve,reject) => {
+// function getData (dataId){
+//        return new Promise ((resolve,reject)=> {
 //         setTimeout(()=> {
-//             console.log(`data ${dataId}`)
-//             resolve('success')
-//             if(getNextData){
-//                 getNextData();
-//             }
-//         },9000)
-//     })
+//             console.log(`data = ${dataId}`);
+//             resolve("success");
+//         },5000)
+//        })
 // }
 
 
 
-// const getPromise = ()=>{
-//      return new Promise((resolve,reject)=> {
+
+// const getPromise = () => {
+//     return new Promise ((resolve,reject)=> {
 //         console.log("I am a promise");
-//         resolve("success");  
-//         // reject("error")
-//      })
+//         // resolve("success");
+//         reject("some error") 
+//     });
 // }
 
 // let promise = getPromise();
-
 // promise.then((res)=> {
 //     console.log("promise fulfilled", res);
-// })
+// });
 
 // promise.catch((err)=> {
-// console.log("rejected", err);
+//     console.log("rejected", err);
 // })
+
+
 
 
 // -->  promise chain
+
+// function asyncFunc1 (){
+//      return new Promise ((resolve,reject) => {
+//         setTimeout(() => {
+//          console.log("data1");
+//          resolve("success")
+//         },3000);
+//      });
+// }
+
+// function asyncFunc2 (){
+//      return new Promise ((resolve,reject) => {
+//         setTimeout(() => {
+//          console.log("data2");
+//          resolve("success")
+//         },3000);
+//      });
+// }
+
+// console.log("fecthing data1 ..... ");
+// asyncFunc1().then((res) => {
+//     console.log(res);
+//     console.log("fecthing data2 ....");
+// asyncFunc2().then((res)=> {
+//         console.log(res);
+//     });
+// }); 
+
+
+function getData (dataId){
+    return new Promise ((resolve,reject)=> {
+        setTimeout(()=> {
+         console.log(`data ${dataId}`);
+         resolve("success");
+        },3000);
+    });
+}
+
+
+getData(1).then((res)=> {
+     return getData(2);
+}).then((res)=> {
+    return getData(3);
+}).then((res) => {
+    console.log(res);
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function asynFunc1() {
 //     return new Promise((resolve, reject) => {
