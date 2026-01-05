@@ -67,6 +67,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 //                       loops
 
 
@@ -100,14 +110,73 @@
 
 // --> for loop 
 
-for(let num = 1; num <= 10; num++){
-    console.log(num);
-}
+// for(let num = 1; num <= 10; num++){
+//     console.log(num);
+// }
 
 
-for(let num = 1; num <= 10; num++){
-    console.log(`10 * ${num} = ${num * 10}`);
-}
+// for(let num = 1; num <= 10; num++){
+//     console.log(`10 * ${num} = ${num * 10}`);
+// }
+
+
+// for(let i = 1; i <= 5; i++){
+//     let pattern = "";
+//     for(let j = 1; j <= i; j++){
+//         pattern = pattern + " *";
+//     }
+//     console.log(pattern);
+    
+// }
+
+
+
+
+
+
+
+
+//                         Functions
+
+// --> normal function
+
+// function sum (a,b){
+//     console.log(a + b);
+// }
+// sum(5,5);
+
+
+// --> using return
+
+// function sum (a,b){
+//     return a + b;
+        // after return code was not executed
+// }
+// console.log(sum(4,9));
+// console.log(sum(5,5));
+
+
+
+// --> function ecpresion (store function in variable and invock by variable name)
+
+// let result = function sum (a,b) {
+//     console.log(a+b);
+// }
+// result(5,5);
+
+
+
+// --> Anonymous function
+
+// let result = function (a,b){
+//     console.log(a + b);
+// }
+// result(5,5);
+
+
+
+// 
+
 
 
 
