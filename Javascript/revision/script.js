@@ -1,5 +1,7 @@
 //                  if else statement
 
+
+
 // let candidateAge = 18;
 // let isCitizen = true ;
 // let isRegistered = false;
@@ -175,12 +177,69 @@
 
 
 
-// 
+// --> IIFE
+
+
+// (function (a,b){
+//     console.log(a + b);
+// })(5,5);
+
+
+// var result = (function (a,b){
+//     console.log(a + b);
+//     return a + b;
+// })(5,5);
+
+// console.log(`The sum of two number is ${result} `)
+
+
+
+// --> default parameters
+
+// function sum (a, b=5){
+//     return a + b;
+// }
+
+// // console.log(sum(5));
+// console.log(sum(5,10));
+
+
+
+// arrow function
+
+// let sum = (a,b) => {
+//     console.log(a + b);
+// }
+// sum(5,5);
+
+
+// let sum = myName => console.log(`My name is ${myName}`);
+// sum("Abdullah Tayyab")
+
+
+// const isReverse = (str) => {
+//     for(let char = 0; char < str.length; char++) {
+//         console.log(str[char]);
+//     }
+// };
+// isReverse("hello world")
+
+
+const isReverse = (str) => {
+    let reverse = "";
+    for(let char = str.length -1; char >= 0; char--) {
+        reverse = reverse + str[char];
+    }
+    return reverse;
+};
+console.log(isReverse("hello world"))
 
 
 
 
 
+
+//                       Array
 
 
 
