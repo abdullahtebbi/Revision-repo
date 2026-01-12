@@ -335,6 +335,39 @@
 // Note : Use the .map method creates a new array with transformed alements
 
 
+// find()
+// let numbers = [1,2,3,6,5,6,7,8,9];
+// const result = numbers.find((currval) => {
+//     return currval > 8
+// })
+// console.log(result);
+
+
+// findIndex()
+// let numbers = [1,2,3,6,5,6,7,8,9];
+// const result = numbers.findIndex((currVal) => {
+//     return currVal > 8
+// })
+// console.log(result);
+
+
+// filter()
+// let numbers = [1,2,3,6,5,6,7,8,9];
+// const result = numbers.filter((currVal) => {
+//     return currVal > 5
+// })
+// console.log(result);
+
+
+// reduce(accumlator,curr,index,)
+//  let productPrice = [100,200,300,400,500];
+//  const totalPrice = productPrice.reduce((accum,curr) => {
+//     return accum + curr
+//  })
+// console.log(totalPrice);
+
+
+
 
 
 // ---> Aray methods
@@ -381,6 +414,34 @@
 // includex(searching value) // searching the value and return true or false
 // let fruits = ["Apple", "Orange", "Mango"]
 // console.log(fruits.includes("Mango"));
+
+
+// sort()
+// apply to array of string
+// let fruits = ["apple","orange","banana","water mellon"]
+// console.log(fruits.sort());
+
+// apply to array of numbers
+// let nums = [1,2,5,10];
+// console.log(nums.sort()); // wrong output [1,10,2,5]
+
+// let numbers = [12,25,13,84,85,66,17,81,90];
+// numbers.sort((a,b) => a - b);
+// console.log(numbers); // assending order
+
+// let numbers = [12,25,13,84,85,66,17,81,90];
+// numbers.sort((a,b) => b - a);
+// console.log(numbers); // decending order
+
+
+
+
+
+
+
+
+
+
 
 
 
