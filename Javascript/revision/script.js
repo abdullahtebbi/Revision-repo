@@ -302,7 +302,7 @@
 // fruits.forEach((currEle,index,arr)=>{
 //      console.log(`${currEle} ${index}`);
 
-//     //  console.log(arr);
+//     // console.log(arr);
 // });
 
 // -> return (No)
@@ -407,11 +407,11 @@
 
 
 // lastIndexOf(searching-value, from index search start to backword)
-// let numbers = [1,2,3,6,5,6,7,8,9];
-// console.log(numbers.lastIndexOf(6,5));
+// let numbers = [1,2,3,5,6,7,6,2];
+// console.log(numbers.lastIndexOf(2,5));
 
 
-// includex(searching value) // searching the value and return true or false
+// includes(searching value) // searching the value and return true or false
 // let fruits = ["Apple", "Orange", "Mango"]
 // console.log(fruits.includes("Mango"));
 
@@ -438,12 +438,45 @@
 
 
 
+//            String
+
+//---> creat string
+
+// let str = "Hello world";
+// console.log(str);
+
+// let str = 'Hello World';
+// console.log(str);
 
 
+// ---> string searching methods
+
+// --> indexOf()
+// let str = "Hello World";
+// console.log(str.indexOf("World"));
 
 
+// --> lastIndexOf()
+// let str = "Hello Javascript, welcome to our world best Javascript course";
+// console.log(str.lastIndexOf("Javascript"));
+
+// --> search();
+// let str = "Hello Javascript, welcome to our world best Javascript course";
+// console.log(str.search(/javascript/gi)) //g is searching globaly and i is ignore to case sensitvity
 
 
+// --> match()
+// let str = "Hello Javascript, welcome to our world best Javascript course";
+// result = str.match("Javascript") // normal search
+// result = str.match(/javascript/gi) // searching with regular expression
+// console.log(result);
+
+
+// -->  matchAll(); // allways searching with global flag by defalt
+// let str = "Hello Javascript, welcome to our world best Javascript course";
+// let result = str.matchAll("Javascript");
+// console.log(result); // return empty iterator array
+// console.log(...result); // using spread operator
 
 
 
