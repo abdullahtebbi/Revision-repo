@@ -338,21 +338,21 @@
 // find()
 // let numbers = [1,2,3,6,5,6,7,8,9];
 // const result = numbers.find((currval) => {
-//     return currval > 8
-// })
+//     return currval > 6
+// });
 // console.log(result);
 
 
 // findIndex()
 // let numbers = [1,2,3,6,5,6,7,8,9];
 // const result = numbers.findIndex((currVal) => {
-//     return currVal > 8
-// })
+//     return currVal > 6
+// });
 // console.log(result);
 
 
 // filter()
-// let numbers = [1,2,3,6,5,6,7,8,9];
+// let numbers = [1,6,3,6,5,6,7,8,9];
 // const result = numbers.filter((currVal) => {
 //     return currVal > 5
 // })
@@ -363,7 +363,7 @@
 //  let productPrice = [100,200,300,400,500];
 //  const totalPrice = productPrice.reduce((accum,curr) => {
 //     return accum + curr
-//  })
+//  });
 // console.log(totalPrice);
 
 
@@ -402,7 +402,7 @@
 
 
 // indexOf(searching-value,from-index search start to upword);
-// let fruits = ["Apple", "Orange", "Mango","Grapes", "Banana"]
+// let fruits = ["Apple", "Orange", "Mango","Grapes", "Banana"];
 // console.log(fruits.indexOf("Grapes",1));
 
 
@@ -462,7 +462,7 @@
 
 // --> search();
 // let str = "Hello Javascript, welcome to our world best Javascript course";
-// console.log(str.search(/javascript/gi)) //g is searching globaly and i is ignore to case sensitvity
+// console.log(str.search(/javascript/gi)); //g is searching globaly and i is ignore to case sensitvity
 
 
 // --> match()
@@ -477,6 +477,228 @@
 // let result = str.matchAll("Javascript");
 // console.log(result); // return empty iterator array
 // console.log(...result); // using spread operator
+
+
+// --> includes();
+// let str = "Hello Javascript, welcome to our world best Javascript course";
+// let result = str.includes("Java");
+// console.log(result);
+
+
+// --> startWith();
+// let str = "Hello Javascript, welcome to our world best Javascript course";
+// let result = str.startsWith("Hello");
+// console.log(result);
+
+
+// --> endsWith();
+// let str = "Hello Javascript, welcome to our world best Javascript course";
+// let result = str.endsWith("course");
+// console.log(result);
+
+
+// ---> Strind methods
+
+// --> slice(start-index,last-index+1)
+// let myName = "Hello Tayyab";
+// console.log(myName.slice(6,12));
+// // console.log(myName.slice(-6)); 
+ 
+
+// --> substring();
+// let str = "Hello this is Tayyab";
+// let result = str.substring(6);
+// console.log(result);
+
+// --> replace();
+// let str = "Yello World";
+// let result = str.replace("Y","H");
+// console.log(result);
+
+
+// --> replaceAll();
+// let str = "Hello Javascript, welcome to our world best Javascript course";
+// let result = str.replaceAll("javascript","Python")
+// console.log(result);
+
+
+// --> charAt();
+// let str = "Hello this is Tayyab";
+// let result = str.charAt(6)
+// console.log(result);
+
+
+// --> charCodeAt();
+// let str = "Hello this is Tayyab";
+// let result = str.charCodeAt(6)
+// console.log(`code of char "${str[6]}" is ${result}`);
+
+
+// --> at();
+// let str = "Hello this is Tayyab";
+// let result = str.at(14);
+// let result = str.at(-6)
+// console.log(result);
+
+
+// --> toLowerCase();
+// let str = "HELLO WORLD";
+// console.log(str.toLowerCase());
+
+// --> toUpperCase()
+// let str = "hello world";
+// console.log(str.toUpperCase());
+
+
+// --> trim()
+// let str = "     hello world       ";
+// console.log(str);
+// console.log(str.trim());
+
+
+// --> split();
+// let str = "apple,banana,orange";
+// console.log(str.split(","));
+// console.log(str.split(",").reverse());
+
+
+
+//         Math functions
+
+
+// ---> Math.round()
+// console.log(Math.round(4.49)); // 4
+// console.log(Math.round(4.5)); // 5
+// Note : Round to the nearest inter.
+
+
+// ---> Math.floor()
+// console.log(Math.floor(4.1)); // 4
+// console.log(Math.floor(4.49)); // 4
+// console.log(Math.floor(4.7)); // 4
+// console.log(Math.floor(4.9)); // 4
+// console.log(Math.floor(-5.9)); // -6 
+// console.log(Math.floor(-9.9)); // -10 
+// Note : Always rounds down to the nearest integer.
+
+
+// ---> Math.ceil()
+// console.log(Math.ceil(4.1)); // 5
+// console.log(Math.ceil(4.01)); // 5
+// console.log(Math.ceil(4.5)); // 5
+// console.log(Math.ceil(4.99)); // 5
+// Note : Always rounds up to the nearest integer.
+
+
+// ---> Math.trunc() behave same of floor but not same -negative value case
+// console.log(Math.trunc(3.1)); // 3
+// console.log(Math.trunc(3.99)); // 3
+// console.log(Math.trunc(-4.9)); // -4
+
+
+// ---> Math.pow()
+// console.log(Math.pow(2,4)); // 16
+// console.log(2 ** 4); // Method - 2 (E6)
+
+
+// ---> Math.sprt()
+// console.log(Math.sqrt(25)); // 5
+
+
+// ---> Math.log(x) return the natural logarithm of x
+// console.log(Math.log(7));
+ 
+
+// ---> Math.log2(x) return the base 2 logarithm of x
+// console.log(Math.log2(7));
+
+
+// ---> Math.random()
+// console.log(Math.random() * 100);
+// console.log(Math.floor(Math.random() * 100)); // using floor skip the after of pointed values
+// console.log((Math.random() *  100).toFixed(2)  );
+
+
+
+
+
+
+
+//                  DOM
+
+// ---> getting alement by id
+
+// let getEleById = document.getElementById("heading");
+// console.log(getEleById); // return the element
+
+// getting the text in element
+// console.log(getEleById.innerHTML);   //   DOM API 
+// console.log(getEleById.innerText);   //   DOM API
+// console.log(getEleById.textContent); //   DOM API
+
+
+
+// ---> getting element by className
+
+// let getEleByClassName = document.getElementsByClassName("list-of-nodes");
+// // console.log(getEleByClassName);
+
+// // getting the text in element
+
+// for(let ele of getEleByClassName){
+//         console.log(ele.innerHTML);
+//         console.log(ele.innerText);
+//         console.log(ele.textContent);
+        
+// }
+
+
+
+// ---> getting element by tagName
+
+
+// let getEleByTagName = document.getElementsByTagName("li");
+// // console.log(getEleByTagName);
+
+// // apply for of loop of tag colections
+
+// for (let ele of getEleByTagName){
+//         console.log(ele)
+// }
+
+
+
+// getting element by querySelector
+
+// let getEleByQuerySelector = document.querySelector("#heading");
+// // console.log(getEleByQuerySelector);
+
+// // change the innerText
+// console.log(getEleByQuerySelector.innerText = "Hello World");
+
+
+
+// getting element by querySelectorAll
+
+// let getEleByQuerySelectorAll = document.querySelectorAll("li");
+// console.log(getEleByQuerySelectorAll);
+
+// // get innertext in the elements of colection using for loop
+// // for(let ele of getEleByQuerySelectorAll){
+// //         console.log(ele.innerText);
+// // }
+
+
+
+// ---> todo-list
+
+let inputVal = document.querySelector("#input");
+let button = document.querySelector("#button");
+let showValueArea = document.querySelector("#value-area");
+
+
+
+
 
 
 
