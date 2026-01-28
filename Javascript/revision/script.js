@@ -624,7 +624,7 @@
 
 
 
-//                  DOM
+//----------------------------------------- DOM --------------------------------------------------//
 
 // ---> getting alement by id
 
@@ -692,9 +692,246 @@
 
 // ---> todo-list
 
-let inputVal = document.querySelector("#input");
-let button = document.querySelector("#button");
-let showValueArea = document.querySelector("#value-area");
+// let inputVal = document.querySelector("#input");
+// let button = document.querySelector("#button");
+// let showValueArea = document.querySelector("#value-area");
+// let valDiv = document.querySelector("#value-area");
+
+
+// const addTodo = () => {
+
+//         let creatP = document.createElement("p");
+//         creatP.textContent = inputVal.value;
+//         valDiv.append(creatP);
+
+//         inputVal.value = "";
+// }
+
+// button.addEventListener("click", ()=> {
+//         addTodo();
+// })
+
+// valDiv.addEventListener("click", (event) => {
+//         let currVal = event.target;
+//         currVal.remove();
+// })
+
+
+
+
+///////////////////////// EVENTS
+
+////// ---> Event handler using dom
+
+// let btn = document.getElementById("my-btn");
+
+// btn.onclick = () => {
+//         alert("Welcome");
+// }
+
+// let btn2 = document.getElementById("my-btn1");
+
+// btn2.ondblclick = () => {
+//         alert("Welcome");
+// }
+
+
+// let btn3 = document.getElementById("my-btn2");
+
+// btn3.onmouseover = () => {
+//         alert("Welcome");
+// }
+
+
+
+
+
+////// ---> Event handler using addEventLitner
+
+// let btn1 = document.getElementById("btn-1");
+
+// btn1.addEventListener("click", () => {
+//         alert("Welcome");
+// })
+
+
+// let btn2 = document.getElementById("btn-2");
+
+// btn2.addEventListener("dblclick", () => {
+//         alert("Welcome");
+// })
+
+
+// let btn3 = document.getElementById("btn-3");
+
+// btn3.addEventListener("mouseover", () => {
+//         alert("Welcome");
+// })
+
+
+
+
+
+
+////// ---> mouse events
+
+// let div = document.getElementById("div");
+// let btn = document.getElementById("btn");
+
+// --> click event
+// div.addEventListener ("click", () => {
+//         div.style.backgroundColor = "green";
+//         btn.textContent = "Mouse is clicked";
+//         console.log("Fire click event");
+
+// });
+
+
+
+// --> dblclick event
+// div.addEventListener ("dblclick", () => {
+//         div.style.backgroundColor = "green";
+//         btn.textContent = "Mouse is clicked two times"
+//         console.log("Fire dblclick event");
+           
+// });
+
+
+
+// --> mouseenter event (only work for parent element not children)
+// div.addEventListener("mouseenter", () => {
+//     div.style.backgroundColor = "red";
+//     btn.textContent = "Mouse Enter the div"
+//     console.log("Fire mouseenter event");
+// });
+
+
+
+// --> mouseleave event
+// div.addEventListener("mouseleave", () => {
+//     div.style.backgroundColor = "green";
+//     btn.textContent = "Mouse leave the div";
+//     console.log("Fire mouseleave event");
+// });
+
+
+
+// --> mouseover event (working on element + children )
+// div.addEventListener("mouseover", () => {
+//         div.style.backgroundColor = "red";
+//         btn.textContent = "Mouse is over the div";
+//         console.log("Fire mouseover event");
+
+// });
+
+
+
+// --> mouseout event
+// div.addEventListener ("mouseout", () => {
+//         div.style.backgroundColor = "green";
+//         btn.textContent = "Mouse is out the div";
+//         console.log("Fire mouseout event");   
+// });
+
+
+
+// --> mouseup event
+// div.addEventListener ("mouseup", () => {
+//         div.style.backgroundColor = "green";
+//         btn.textContent = "Mouse Up";
+//         console.log("Fire mouseup event");
+// });
+
+
+
+// --> mousedown event
+// div.addEventListener ("mousedown", () => {
+//         div.style.backgroundColor = "green";
+//         btn.textContent = "Mouse Down";
+//         console.log("Fire mousedown event");
+// });
+
+
+
+// --> mousemove event
+// div.addEventListener ("mousemove", () => {
+//         div.style.backgroundColor = "green";
+//         btn.textContent = "Mouse is moving the div";
+//         console.log("Fire mousemove event"); 
+// });
+
+
+
+// --> contextmenu event
+// div.addEventListener ("contextmenu", () => {
+//         div.style.backgroundColor = "green";
+//         btn.textContent = "Text Menu";
+//         console.log("Fire contextmenu event");
+// });
+
+
+
+
+
+////// ---> Keybord Events
+
+// let input = document.getElementById("text-input");
+
+// --> keyup
+// input.addEventListener("keyup", (e) => {
+//         console.log("Fire keyup event");
+//         console.log(`key = ${e.key}`);
+//         console.log(`Code = ${e.code}`);
+//         console.log(`Type = ${e.type}`);     
+// });
+
+
+
+// --> keydown
+// input.addEventListener("keydown", (e) => {
+//         console.log("Fire keydown event");
+//         console.log(`key = ${e.key}`);
+//         console.log(`Code = ${e.code}`);
+//         console.log(`Type = ${e.type}`);     
+// });
+
+
+
+
+
+////// ---> input events
+
+// --> input event
+
+// let input = document.getElementById("text-input");
+
+// input.addEventListener("input", (e) => {
+//         console.log("Fire input event");
+//         console.log(`Value = ${e.target.value}`);
+//         console.log(`Name = ${e.target.name}`);
+//         console.log(`Input type = ${e.inputType}`);
+//         console.log(`Event Type = ${e.type}`)
+// });
+
+
+// --> change event
+
+// input.addEventListener("change", (e) => {
+//         console.log("Fire input event");
+//         console.log(`Value = ${e.target.value}`);
+//         console.log(`Name = ${e.target.name}`);
+//         console.log(`Event Type = ${e.type}`)
+// });
+
+
+// ------------------------------------------------------------------------------------------------ //
+
+
+
+
+
+
+
 
 
 
