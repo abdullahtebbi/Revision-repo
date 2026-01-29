@@ -932,6 +932,63 @@
 
 
 
+//---------------------------------- local storage & JSON ------------------------------------------//
+
+// ---> Add the data from localStorage      
+// localStorage.setItem("data1","any data about data1");
+// localStorage.setItem("data2","any data about data2");
+
+
+// ---> Get the data from localStorage
+// console.log(localStorage.getItem("data"));      
+
+
+// ---> remove the data from lacalStorage
+// console.log(localStorage.removeItem("data2"));
+
+// Note : Local storage can only store strings, so when you want to store a complex data structure like an array or an abject, you need to convert it to a string JSON.stringify.
+
+
+// ---> JSON (JSON.stringify() , JSON.parse()) 
+
+
+// const studentData = {
+//         fullName : "Abdullah Tayyab",
+//         age : 21,
+//         gender : "Male",
+//         progran : "Engineering in Artificial Intellijence",
+//         adtess : {
+//                 city : "Jaranwala",
+//                 Town : "Deffence",
+//                 streetNo : 5 
+//         },
+// };
+
+
+// console.log(localStorage.setItem("studentBioData", JSON.stringify(studentData)));
+
+// console.log(JSON.parse(localStorage.getItem("studentBioData")));
+
+// ------------------------------------------------------------------------------------------------ //
+
+
+
+
+// --------------------------------- Dates and Time ----------------------------------------------- //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
