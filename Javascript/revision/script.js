@@ -976,16 +976,303 @@
 
 // --------------------------------- Dates and Time ----------------------------------------------- //
 
+// --> new Date();
+// const newDate = new Date();
+// console.log(newDate);
+
+
+// --> new Date(dateString);
+// const dateString = "Fri Jan 30 2026 02:54:18 GMT+0500 (Pakistan Standard Time)";
+// console.log(new Date(dateString));
+
+
+// --> new Date(year , month);
+// console.log(new Date(2003,7));
+
+
+// new Date(year , month , dat);
+// console.log(new Date(2003, 6, 14));
+
+
+// new Date(year, month, day, hour);
+// console.log(new Date(2003, 6, 14, 3));
+
+
+// new Date(year, month, day, hour, minuts);
+// console.log(new Date(2003, 6, 14, 3, 33));
+
+
+// new Date(year, month, day, hour, minuts, seconds);
+// console.log(new Date(2003, 6, 14, 3, 33, 33));
+
+
+// new Date().getTime(); //return milli seconds from ( 1 jan 1070 to current time)
+// console.log(new Date().getTime());
+
+
+
+// ---> get date methods / getting components
+
+// --> getting year
+// const date = new Date();
+// const year = date.getFullYear();
+// console.log(year);
+
+
+// getting month
+// const date = new Date();
+// const month = date.getMonth();
+// console.log(month)
+
+
+// getting day
+// const date = new Date();
+// const day = date.getDay();
+// console.log(day);
+
+
+
+// getting hour
+// const date = new Date();
+// const hour = date.getMonth();
+// console.log(hour);
 
 
 
 
 
+// ---> set Date Methods / setting compunents
+
+// --> setFullYear(year); 
+// const date = new Date();
+// console.log(date); // before
+// date.setFullYear(2027);
+// console.log(date); // after
+
+
+// --> setMonth();
+// const date = new Date();
+// console.log(date);
+// date.setMonth(0);
+// console.log(date);
 
 
 
 
 
+// ---> usefull methods of the date object in javascript
+
+// const date = new Date();
+
+// --> toDateString();
+// console.log(date.toDateString()); // --> Tue Feb 03 2026
+
+// --> toLocalDateString()
+// console.log(date.toLocaleDateString()); // --> 2/3/2026
+
+// --> toTimeString()
+// console.log(date.toTimeString()); // --> 00:35:27 GMT+0500 (Pakistan Standard Time)
+
+// --> toLocalTimeString() 
+// console.log(date.toLocaleTimeString()); // --> 12:38:20 AM
+
+
+// --> Date.parse()  (convert utc format time to millisecong)
+// const date = "Tue Feb 03 2026 00:41:42 GMT+0500"
+// const parseDate = Date.parse(date);
+// console.log(parseDate);
+
+// --> Date.now(date)  (return now time in millisecond)
+// console.log(Date.now());
+
+// --> .getTime() (return time to millisecond)
+// console.log(date.getTime());
+
+
+
+
+// ---> setTimeOut();
+
+// function delayedFunction () {
+//         console.log('work after two seconds');
+// }
+
+
+// setTimeout(delayedFunction , 2000)
+
+
+// function delayedFunction (x) {
+//         console.log('work after two seconds', x);
+// }
+
+
+// setTimeout(() => delayedFunction(5) , 2000)
+
+
+
+  
+
+// ---> setInterval()
+
+// function replayedFunction () {
+//         console.log("run after every two seconds");
+// }
+
+// setInterval(replayedFunction , 2000)
+
+
+
+
+// ---> clearInterval()
+
+// const repeatedFunction = () => {
+//         console.log("This function repeats every 1 second");
+// };
+
+// const setIntervalId = setInterval(repeatedFunction , 1000);
+
+// setTimeout(() => {
+// clearInterval(setIntervalId);
+// console.log("Function was stoped")
+// },5000);
+
+
+// in this code we stoped the setinterval function stoped after 5 seconds using clearinterval with settime out.
+
+// ------------------------------------------------------------------------------------------------ //
+
+
+
+
+// ----------------------------------------- Objects--------------------------------------------- //
+
+// ---> creat object
+
+// const student = {
+//         fullName : "Abdullah Tayyab",
+//         id : 1234,
+//         Age : 22,
+//         ifStudent : true,
+//         adress : {
+//              town : "Deffence View",
+//              face : 2,
+//              streetNo : 5
+//         },
+//         greet : function (){
+//                 console.log("Hello World");
+                
+//         }
+// };
+
+
+// ---> accessing properties of the object
+
+// --> dot notation
+// console.log(student.fullName);
+// console.log(student.id);
+// console.log(student.Age);
+// console.log(student.ifStudent);
+// console.log(student.adress);
+// console.log(student.adress.town);
+// console.log(student.adress.face);
+// console.log(student.adress.streetNo);
+// console.log(student.greet());
+
+
+// --> bracket notation
+// console.log(student["fullName"]);
+// console.log(student["id"]);
+// console.log(student["Age"]);
+// console.log(student["ifStudent"]);
+// console.log(student["adress"]);
+// console.log(student["adress"].town);
+// console.log(student["adress"].face);
+// console.log(student["adress"].streetNo);
+// console.log(student["adress"]["streetNo"]); // method two to access the property of the object
+
+
+
+
+// ---> adding and modifying properties of the object
+
+// student.skill = "AI Driven Full Stack Developer"; // add in object 
+// student.Age = 22.5; // update in object
+// console.log(student);
+
+
+
+
+// ---> Method call in object
+
+// student.greet()
+
+
+
+
+// ---> We can add dynamic keys in an object
+
+// let idType = "collegeId";
+// let student = {
+//         [idType] : "A12345", // dynamic key based on idType
+//         sName : "Tayyab",
+//         sAge : 21,
+//         isStudent : true,
+//         greet : function () {
+//                 console.log(`Hey, my ${idType} is ${student[idType]} and my name is ${student.sName}`);
+//         }
+// };
+
+
+// student.greet();
+
+
+
+
+
+// ---> Pass by value vs reference
+
+// let obj = {
+//         myName : "Abdullah",
+//         Gender : "Male"
+// };
+
+// let obj1 = obj;
+// obj1.myName = "Tayyab";
+// console.log(obj1);
+// console.log("Original array", obj);
+
+
+// --> Object.assign() remove pass by reference 
+
+// let obj = {
+//         myName : "Abdullah",
+//         Gender : "Male"
+// };
+
+// newObj = Object.assign({} , obj);
+
+// newObj.myName = "Tayyab";
+// console.log(newObj);
+// console.log("original array" , obj);
+
+
+
+
+
+// ---> Comparison by reference 
+
+// let obj1 = { name : "Tayyab"};
+// let obj2 = { name : "Tayyab"};
+
+// const isEqual = obj1 == obj2 ? true : false;
+// console.log(isEqual); // false bacause obj1 and obj2 is stored different memories
+
+
+// let obj1 = { name : "Tayyab"};
+// let obj2 = { name : "Tayyab"};
+// const obj3 = obj1;
+// const isEqual = obj1 == obj3 ? true : false;
+// console.log(isEqual); // true
 
 
 
