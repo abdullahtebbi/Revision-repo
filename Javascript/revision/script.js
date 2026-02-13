@@ -1276,8 +1276,53 @@
 
 
 
+// ---> Object usefull methods
+
+const product = {
+        id : 1,
+        category : "Computer",
+        brand : "Dell",
+        price : 999.99,
+        stock : 50,
+        discription : "Powerfull laptop with a quad-core i5 proccessor, 8gb RAM, 226gb SSD and 14inch FSD display.",
+        images : "images url"
+};
 
 
+// --> Object.keys();
+// let keys = Object.keys(product);
+// console.log(keys);
+
+
+// --> Object.values(); 
+// let keys = Object.values(product);
+// console.log(keys);
+
+
+// --> Object.entries(); -- (Returns an array containing arrays of key-values pairs for each enumerable own property of an object.)
+
+// let entries = Object.entries(product);
+// console.log(entries);
+
+
+// --> objectName.hasOwnProperty(); 
+// let checkProperty = product.hasOwnProperty("id");
+// console.log(checkProperty); // true
+
+
+// --> Object.assign(); (Copies the values of all enumerable own properties from one or more source objects to a target object.)
+
+// const target = {a : 1, b : 2, d : 1};
+// const source = {b : 3, c : 4, d : 2};
+// const mergedObject = Object.assign(target, source);
+// console.log(mergedObject);
+
+
+// --> Object.freeze(); freeze an object
+// console.log(product);
+// Object.freeze(product);
+// product.id = "333";
+// console.log(product);
 
 
 
