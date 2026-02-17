@@ -1278,15 +1278,15 @@
 
 // ---> Object usefull methods
 
-const product = {
-        id : 1,
-        category : "Computer",
-        brand : "Dell",
-        price : 999.99,
-        stock : 50,
-        discription : "Powerfull laptop with a quad-core i5 proccessor, 8gb RAM, 226gb SSD and 14inch FSD display.",
-        images : "images url"
-};
+// const product = {
+//         id : 1,
+//         category : "Computer",
+//         brand : "Dell",
+//         price : 999.99,
+//         stock : 50,
+//         discription : "Powerfull laptop with a quad-core i5 proccessor, 8gb RAM, 226gb SSD and 14inch FSD display.",
+//         images : "images url"
+// };
 
 
 // --> Object.keys();
@@ -1323,6 +1323,118 @@ const product = {
 // Object.freeze(product);
 // product.id = "333";
 // console.log(product);
+
+// ------------------------------------------------------------------------------------------------ //
+
+
+
+
+// ----------------------------------------- ECMAScript ------------------------------------------- //
+
+// ---> shorthand notation for object property
+// const name = "Tayyab";
+// const age = 21;
+
+// triditional way 
+// const person = {name : name, age: age};
+// console.log(person);
+
+// using shorthand notation for object property
+// const person = {name, age};
+// console.log(person);
+
+
+
+
+
+
+// ---> Destructuring  (Array)
+
+// --> Extracting specific elements:
+// const numbers = [10, 20, 30];
+
+// triditional way
+// const first = numbers[0];
+// console.log(first);
+
+// using modern javascript shorthand method
+// const [first, second, third] = numbers;
+// console.log(second);
+
+// --> ignoring elements
+// const [, , third] = numbers;
+// console.log(third);
+
+
+
+
+
+
+// ---> Destructuring (Object)
+
+// const person = {name: "Tayyab", age: 21};
+
+// --> Extracting properties
+
+// -> triditional way
+// const myName = person.name;
+// console.log(myName);
+
+// -> using modern javascript method
+// const {name, age} = person;
+// console.log(name, age);
+
+
+// --> renaming properties
+// const {name: fullName, age } = person;
+// console.log(fullName);
+
+
+
+
+
+
+// ---> Spread Operator
+
+// --> copying an array
+// let fruits = ["orange", "apple", "grapes", "banana"];
+// let newFruits = [...fruits];
+// console.log(newFruits);
+
+// --> concatinating array / conbining array
+// let num1 = [1,2,3,4];
+// let num2 = [4,5,6];
+// let newNum = [...num1, ...num2];
+// console.log(newNum);
+
+// --> Adding elements to existing array using spread operator
+// let fruits = ["orange", "apple", "grapes", "banana"];
+// fruits.push(...["watermellon", "strobury"]);
+// console.log(fruits);
+
+// --> convert the string into an array of its individual charactors using opread operator
+
+// -> traditional way 
+// const country = "PAKISTAN";
+// console.log(country.split(""));
+
+// -> using modern javascript method
+// const country = "PAKISTAN";
+// console.log([...country]);
+
+
+
+
+
+
+// ---> Rest parameters
+
+
+
+
+
+
+
 
 
 
