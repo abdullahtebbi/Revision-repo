@@ -1429,6 +1429,81 @@
 
 // ---> Rest parameters
 
+// --> traditional way
+// const sum = (a,b,c,d) => {
+//         return(a+b+c+d);
+// }
+
+// console.log(sum(1,2,3,4));
+
+// --> with rest parameters
+// const sum = (...numbers) => {
+//     return numbers.reduce((accum,curval) => 
+//         (accum = accum + curval),0
+//     )
+// };
+
+// console.log(sum(1,2,3,4,5));
+
+
+
+
+
+
+// ---> string padding 
+
+// --> padStart();
+// const string = "string";
+// const paddedString = string.padStart(16);
+// console.log(paddedString);
+
+
+// --> padEnd();
+// const string = "string";
+// const paddedString = string.padEnd(14, "*");
+// console.log(paddedString);
+
+
+
+
+
+
+// ---> usefull features
+
+// --> Array.flat
+// const array = [1,2,[3,4],5,6];
+// const flatArray = array.flat();
+// console.log(flatArray); 
+
+// const array1 = [1,2,3,[4,[5,6,7],8],9];
+// const flatArray1 = array1.flat(2)
+// console.log(flatArray1);
+
+
+// --> flatMap();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
