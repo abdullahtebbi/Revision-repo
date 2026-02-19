@@ -1482,10 +1482,57 @@
 
 // --> flatMap();
 
+// const arr = ["My Name", "is Abdullah", "Tayyab"];
+// const newArr = arr.flatMap((currVall) => currVall.split(" "));
+// console.log(newArr)
 
 
 
 
+
+// ---> Object.enties() & Object.fromEntries();
+
+// const person = {name: "Abdullah Tayyab", age: 21};
+// const entries = Object.entries(person);
+// console.log(entries); // convert object to array
+
+// let newPerson = Object.fromEntries(entries);
+// console.log(newPerson); // convert array to object
+
+// console.log(person == newPerson); // false bacause compare the object-refference not content
+
+
+
+
+
+// ---> ECMAScript Features 2020
+
+// --> BigInt
+// let maxNum = Number.MAX_SAFE_INTEGER;
+// console.log(maxNum);
+// let bigIntMaxNum = BigInt(maxNum)
+// console.log(bigIntMaxNum + 5n);
+
+
+
+
+
+// ---> Optional chaining operator
+
+let person = {
+        name: "Abdullah Tayyab",
+        address : {
+                city: "Faisalabad",
+                zipcode: 1234
+        }
+};
+
+// triditional way
+// const checkObj = person.address ? person.address.city : "city is not present";
+// console.log(checkObj);
+ 
+// using optional chaining oprator (?.)
+const checkObj = person.address ?. city : "city is not present"
 
 
 
