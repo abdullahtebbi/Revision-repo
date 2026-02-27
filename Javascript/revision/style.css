@@ -65,6 +65,46 @@
 
 
 
+/* Event propagation */
+
+body{
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #outer{
+        background: #ffb3b3;
+        padding: 60px;
+        border: 4px solid #cc0000;
+        cursor: pointer;
+    }
+
+    #middle{
+        background: #b3d9ff;
+        padding: 50px;
+        border: 4px solid #0066cc;
+        cursor: pointer;
+    }
+
+    #inner{
+        background: #b3ffb3;
+        padding: 40px;
+        border: 4px solid #009933;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    div{
+        margin: 20px;
+        transition: 0.2s;
+    }
+
+    div:hover{
+        transform: scale(1.03);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
 
 
 

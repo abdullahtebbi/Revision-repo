@@ -1514,25 +1514,214 @@
 // console.log(bigIntMaxNum + 5n);
 
 
+// --> Optional chaining operator
 
-
-
-// ---> Optional chaining operator
-
-let person = {
-        name: "Abdullah Tayyab",
-        address : {
-                city: "Faisalabad",
-                zipcode: 1234
-        }
-};
+// let person = {
+//         name: "Abdullah Tayyab",
+//         address : {
+//                 city: "Faisalabad",
+//                 zipcode: 1234
+//         }
+// };
 
 // triditional way
 // const checkObj = person.address ? person.address.city : "city is not present";
 // console.log(checkObj);
  
-// using optional chaining oprator (?.)
-const checkObj = person.address ?. city : "city is not present"
+// using optional chaining oprator (?.) with shorthand method
+// const checkObj = person?.address?.city ?? "city is not present";
+// console.log(checkObj);
+
+
+
+
+
+
+// ---> ES21
+
+// --> replaceAll();
+// let str = "Hello World! Hello again";
+// let newStr = str.replaceAll("Hello", "Hi");
+// console.log(newStr);
+
+// --> Replacing multiple spaces with a single space
+// let str = "The     quick    brown  fox jumps      over       the   lazy      dog";
+// let normalizedStr = str.replaceAll(/\s+/g , " ");
+// console.log(normalizedStr);
+
+
+// --> Numeric seperator (_)
+
+// let bigNum = 1_000_000;
+// console.log(bigNum); // output - 1000000
+
+
+
+
+
+
+// ---> ES22
+
+// --> .at()
+// let array = [1,2,3,4,5,6,7];
+
+// console.log(array.length-0); // output is - 7 (method one)
+// console.log(array[array.length-1]); // output is - 7 (method two)
+// console.log(array.at(-1)); // output is - 7 (method three shorthand method)
+
+
+// --> Object.hasOwn()
+ 
+// let person = {
+//         name: "Abdullah Tayyab",
+//         age: 22
+// }
+
+// triditional way but expired
+// console.log(person.hasOwnProperty("name")); // true
+// console.log(person.hasOwnProperty("gender")); // false
+
+// modern way
+// console.log(Object.hasOwn(person , "name"));
+
+
+
+
+
+
+// ---> ES23
+
+// --> arra.findLast()
+// let array = [1,2,3,4,5,6,7];
+// console.log(array.findLast((elem) => elem));
+
+
+// --> arra.findLastIndex()
+// let array = [1,2,3,4,5,6,7];
+// console.log(array.findLastIndex((elem) => elem));
+
+
+// --> .toReversed()
+// let days = ["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"];
+// let reversedArray = days.toReversed();
+// console.log(reversedArray);
+// console.log("original array =" , days);
+// console.log("reversed array =" , reversedArray);
+
+
+// --> .toSorted();
+// let days = ["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"];
+// let sortedArray = days.toSorted();
+// console.log(sortedArray);
+// console.log("original array = " , days);
+// console.log("sorted array = " , sortedArray);
+
+
+// --> .with();
+// let name = ["Abdullah","Adrees"];
+// let nameWith = name.with(1,"Tayyab");
+// console.log(nameWith);
+// console.log("original array =", name)
+
+
+
+
+// ------------------------------------------------------------------------------------------------ //
+
+
+
+
+
+// ----------------------------------------- Advanced Javascript ---------------------------------- //
+
+//---> EVENT PROPAGATION --- //
+
+// let callOuter = document.querySelector("#outer");
+// let callMiddle = document.querySelector("#middle");
+// let callInner = document.querySelector("#inner");
+
+// // Outer click handler
+// let outerHandler = (event) => {
+//     console.table([
+//         {
+//             Description: "I am the outer one",
+//             Target: event.target,
+//             CurrTarget: event.currentTarget,
+//         }
+//     ]);
+// };
+
+// // Middle click handler
+// let middleHandler = (event) => {
+//     console.table([
+//         {
+//             Description: "I am the middle one",
+//             Target: event.target,
+//             CurrTarget: event.currentTarget,
+//         }
+//     ]);
+// };
+
+// // Inner click handler
+// let innerHandler = (event) => {
+//     console.table([
+//         {
+//             Description: "I am the inner one",
+//             Target: event.target,
+//             CurrTarget: event.currentTarget,
+//         }
+//     ]);
+// //     stop parent call
+// //     event.stopPropagation();
+// };
+
+// // Add event listeners   ---   Bubling face 
+// // callOuter.addEventListener("click", outerHandler);
+// // callMiddle.addEventListener("click", middleHandler);
+// // callInner.addEventListener("click", innerHandler);
+
+
+
+// // Add event listeners   ---    capturing face
+// callOuter.addEventListener("click", outerHandler, true);
+// callMiddle.addEventListener("click", middleHandler, true);
+// callInner.addEventListener("click", innerHandler, true);
+
+
+// ---------------------- //
+
+
+
+
+// // ---> Event Elegation --- //
+
+// const getListDetails = (event) => {
+//         console.log(event.target.innerText);
+        
+// }
+
+// document.getElementById("my-list").addEventListener("click", getListDetails);
+
+
+// ---------------------- //
+
+
+
+// --->  Functions (Advanced) --- //
+
+// --> First class function 
+
+// function sayHello(name){
+//         return "Hello " + name + "!"; 
+// }
+
+// var greetFunction = sayHello;
+// console.log(sayHello("Tayyab"));
+
+// --> 
+
+
+
 
 
 
